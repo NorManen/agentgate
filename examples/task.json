@@ -1,0 +1,10 @@
+{
+  "title": "Fix apply_discount",
+  "goal": "apply_discount(price, percent) returns the amount taken off instead of the price after the discount. Make it return the discounted price.",
+  "allowed_files": ["discount.py"],
+  "forbidden_files": ["test_discount.py"],
+  "acceptance_checks": ["{python} -m pytest -q -p no:cacheprovider"],
+  "risk_level": "low",
+  "rollback_note": "Restore discount.py from the baseline copy.",
+  "assigned_worker": "cheap-worker"
+}
